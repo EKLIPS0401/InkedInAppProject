@@ -8,7 +8,7 @@ import users from './routes/users';
 const app = express();
 const port = 8080;
 
-const connection_string = 'mongodb://fullstackhero:starwars73@ds123124.mlab.com:23124/inkedin';
+const connection_string = "mongodb://inkedingroup:inkedin123@ds127783.mlab.com:27783/inkeddb";
 
 if (connection_string) {
   mongoose.connect(connection_string).then(() => {
