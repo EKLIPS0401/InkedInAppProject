@@ -4,6 +4,6 @@
 /node_modules
 /public/dist
 /public/javascripts/build
-/public/libs
+
 
 package-lock.json
