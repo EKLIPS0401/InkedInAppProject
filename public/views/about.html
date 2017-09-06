@@ -1,0 +1,25 @@
+<h2>This is my about page</h2>
+
+<div ng-controller="aboutController">
+
+  <h3>{{ companyName }}</h3>
+
+  <ul>
+    <li ng-repeat="item in services">
+      {{ item }}
+    </li>
+
+    <button type="button" name="button" ng-click="getWeather()">Get Weather</button>
+  </ul>
+
+  <div>
+    <input type="text" placeholder="Complaints" ng-model="complaints">
+    <hr> How can i be better <button type="button" name="button" ng-click="addComplaint(complaints)">Tell me how!</button>
+    <br>
+  </div>
+
+  <ul>
+    <li ng-repeat="x in betterment">{{ x }}</li>
+  </ul>
+
+</div>

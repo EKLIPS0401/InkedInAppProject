@@ -1,0 +1,223 @@
+<html>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <ul class="top-nav">
+                <div class="col-xs-1">
+                    <li><a ui-sref="home"><img class="logo" src="./img/Tatto-logo.png" width="70"></a></li>
+                </div>
+                <div class="col-xs-1">
+                    <li class="space"><a ui-sref="home">HOME</a></li>
+                </div>
+                <div class="col-xs-1">
+                    <li class="space"><a ui-sref="about">ABOUT</a></li>
+                </div>
+                <div class="col-xs-1">
+                    <li class="space"><a ui-sref="style">STYLE</a></li>
+                </div>
+                <div class="col-xs-5"></div>
+                <div class="col-xs-1">
+                    <li class="space"><a ui-sref="login"><i class="fa fa-user-circle"></i> LOGIN</a></li>
+                </div>
+                <div class="col-xs-2">
+                    <li class="space signup"><a ui-sref="artist-signup">SIGN UP</a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div id="sidebar-wrapper" class="">
+            <nav id="spy">
+                <ul class="sidebar-nav nav">
+                    <li> <a ui-sref="black-grey">BLACK AND GREY</a>
+
+                    </li>
+                    <li> <a ui-sref="cartoon-anime">CARTOON/ANIME</a>
+
+                    </li>
+                    <li> <a ui-sref="cover-up">COVER UP</a>
+
+                    </li>
+                    <li> <a ui-sref="flash-tattoo">FLASH TATTOO</a>
+
+                    </li>
+                    <li> <a ui-sref="illustrative">ILLUSTRATIVE</a>
+
+                    </li>
+                    <li> <a ui-sref="lettering">LETTERING</a>
+
+                    </li>
+                    <li> <a ui-sref="new-school">NEW SCHOOL</a>
+
+                    </li>
+                    <li> <a ui-sref="pinup">PIN-UP</a>
+
+                    </li>
+                    <li> <a ui-sref="portrait">PORTRAIT</a>
+
+                    </li>
+                    <li> <a ui-sref="realism">REALISM</a>
+
+                    </li>
+                    <li> <a ui-sref="sketch">SKETCH</a>
+
+                    </li>
+                    <li> <a ui-sref="trad-american">TRADITIONAL AMERICAN </a>
+
+                    </li>
+                    <li> <a ui-sref="trad-japanese">TRADITIONAL JAPANESE </a>
+
+                    </li>
+                    <li> <a ui-sref="trash-polka">TRASH POLKA</a>
+
+                    </li>
+                    <li> <a ui-sref="tribal">TRIBAL</a>
+
+                    </li>
+                    <li> <a ui-sref="watercolor">WATERCOLOR</a>
+
+                    </li>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card hovercard hvr-grow">
+                        <div class="cardheader">
+                            <div class="ih-item circle effect13 from_left_and_right">
+                                <a href="#">
+                                    <div class="img"><img class="img-circle" src="/img/Henry/dj-guy.jpg" alt="img"></div>
+                                    <div class="info">
+                                        <div class="info-back">
+                                            <h3>Henry Watz</h3>
+                                            <p>Description goes here</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <br/>
+                            <div class="info">
+                                <div class="name">
+                                    <p>Henry Watz</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 text-center" id="rap-sheet">Exp</div>
+                                <div class="col-xs-6 text-center" id="rap-sheet">Portfolio</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 text-center" id="sheet-num">2 yrs</div>
+                                <div class="col-xs-6 text-center" id="sheet-num">11</div>
+                            </div>
+                            <br/>
+                            <button class="btn btn-info btn-block" ui-sref="henry">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<style>
+    /*Start of navbar  */
+
+    .logo {
+        margin-top: 20px;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .space {
+        list-style-type: none;
+        padding: 40px;
+    }
+
+    .top-nav li a {
+        width: 150px;
+        color: #ea1111;
+        display: block;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 25px;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .signup a {
+        border: 2px solid #000;
+    }
+
+    .top-nav .space a:hover {
+        background: #41ead4;
+        -webkit-transition: 0.6s;
+        -moz-transition: 0.6s;
+        transition: 0.6s;
+    }
+    /*End of navbar  */
+
+    .fa {
+        color: black;
+    }
+    /*Profile Card  */
+
+    .card {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #000;
+        border-radius: 10px
+    }
+
+    .card.hovercard img {
+        width: 220px;
+    }
+
+    .name p {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        color: black;
+    }
+
+    .btn-info {
+        color: #fff;
+        background-color: #41EAD4;
+    }
+
+    .btn-info:hover,
+    .btn-info:focus,
+    .btn-info.focus,
+    .btn-info:active,
+    .btn-info.active,
+    .open>.dropdown-toggle.btn-info {
+        color: #fff;
+        background-color: #14b8a2;
+    }
+
+    #rap-sheet {
+        color: black;
+        display: inline;
+    }
+
+    #sheet-num {
+        color: #999999;
+        display: inline;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .card:hover {
+        box-shadow: 5px;
+    }
+    /*Profile Card  */
+</style>

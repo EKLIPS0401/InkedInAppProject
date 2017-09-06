@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="container box">
+        <div class="card container">
+            <div class="row">
+                <div class="col-md-6 text-center who col-md-offset-3">
+                    <p>Who are you?</p>
+                </div>
+            </div>
+
+            <br/>
+
+            <div class="row">
+                <div class="col-md-6 text-center artist">
+                    <a class="signup" ui-sref="artist-signup">
+                        <h1 class="hvr-float-shadow">Artist</h1>
+                    </a>
+                </div>
+                <div class="col-md-6 text-center user">
+                    <a class="signup" ui-sref="user-signup">
+                        <h1 class="hvr-float-shadow">Client</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            background: url('/img/background/dark-pattern.jpg');
+            background-size: cover;
+        }
+        /*Start of who are you  */
+
+        .who {
+            background: black;
+            border-radius: 8px;
+        }
+
+        .who p {
+            padding: 20px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 30px;
+            color: #41ead4;
+        }
+        /*End of who are you  */
+
+        .box {
+            margin-top: 10%;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .user {
+            padding-top: 100px;
+            padding-right: 0px;
+            padding-bottom: 100px;
+            padding-left: 0px;
+            border-left: 1px solid #999999;
+        }
+
+        .user a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .artist {
+            padding-top: 100px;
+            padding-right: 0px;
+            padding-bottom: 100px;
+            padding-left: 0px;
+            border-right: 1px solid #999999;
+        }
+
+        .artist a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+
+</body>
+
+</html>
