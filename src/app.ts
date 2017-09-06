@@ -6,7 +6,7 @@ import * as opn from 'opn';
 import users from './routes/users';
 
 const app = express();
-const port = 8080;
+const port = 3000;
 
 const connection_string = "mongodb://inkedingroup:inkedin123@ds127783.mlab.com:27783/inkeddb";
 
@@ -23,7 +23,7 @@ app.use(express.static('./public/'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/api/v1/users', users);
+app.use('/api/users', users);
 
 app.get('*', (req, res) => {
   res.sendfile('public/index.html');
